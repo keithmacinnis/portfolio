@@ -28,6 +28,13 @@ function Portfolio() {
     }
   }
   
+  function prevIndex() {
+    if (index == 0) {
+      setIndex(5)
+    } else {
+      setIndex(index-1)
+    }
+  }
 
   return (    
     <div className="container-portfolio  ">
@@ -41,9 +48,13 @@ function Portfolio() {
                   <button className="portfolio-button-l">
                     <img src={IconEmail} alt="" width='30px'/> Details
                   </button>
+                  <button onClick={prevIndex} className="portfolio-button-r">
+                    <img src={IconEmail} alt="" width='30px'/> Prev
+                  </button>
                   <button onClick={nextIndex} className="portfolio-button-r">
                     <img src={IconEmail} alt="" width='30px'/> Next
                   </button>
+
                </div>
             </li>
         {/* {
