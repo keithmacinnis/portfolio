@@ -23,38 +23,36 @@ function Portfolio() {
   function nextIndex() {
     if (index == portfolio.length - 1) {
       setIndex(0)
-    } else {
+    } else { 
       setIndex(index+1)
     }
   }
-  
   function prevIndex() {
     if (index == 0) {
-      setIndex(5)
+      setIndex(portfolio.length - 1)
     } else {
       setIndex(index-1)
     }
   }
 
   return (    
-    <div className="container-portfolio  ">
+    <div className="container-portfolio">
       <h2>Portfolio {index+1} of {portfolio.length}</h2>
         <div className="container-portfolio">
         <li key={index}>
                <h2>{portfolio[index].title}, {portfolio[index].category}</h2>
                <h4>Completion Date: {portfolio[index].completionDate} </h4>
-               <img src={portfolio[index].img} className="image-portfolio" width="75%" height="420px" ></img>
+               <img src={portfolio[index].img} className="image-portfolio" width="80%" height="420px" ></img>
                <div className="portfolio-button-container">
-                  <button className="portfolio-button-l">
-                    <img src={IconEmail} alt="" width='30px'/> Details
-                  </button>
                   <button onClick={prevIndex} className="portfolio-button-r">
                     <img src={IconEmail} alt="" width='30px'/> Prev
+                  </button>
+                  <button className="">
+                    <img src={IconEmail} alt="" width='30px'/> Details
                   </button>
                   <button onClick={nextIndex} className="portfolio-button-r">
                     <img src={IconEmail} alt="" width='30px'/> Next
                   </button>
-
                </div>
             </li>
         {/* {
