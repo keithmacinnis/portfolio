@@ -7,15 +7,15 @@ function Resume() {
   return (  
     <div className="container-resume">
       <h2>Skills & Experience</h2>
-      <div class="container">
+      <div className="container">
         <a href="https://www.linkedin.com/in/keithmacinnis" target="_blank">
           <button>
-            <img src={IconLinkedIn} alt="" width='30px'/>  LinkedIn
+            <img src={IconLinkedIn} alt="" className="icon-naked" width='30px'/>  LinkedIn
           </button>
         </a>
         <a href="https://github.com/keithmacinnis " target="_blank">
-          <button>
-            <img src={IconGitHub} alt="" width='30px' style={{"margin-left":"0px"}}/>  Github
+          <button  >
+            <img src={IconGitHub} alt=""   width='30px'/>  Github
           </button>
         </a>
       </div>
