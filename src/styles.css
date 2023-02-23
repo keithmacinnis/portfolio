@@ -15,7 +15,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-h1 {
+h1, h2 , h4 {
   font-family: "NocturneBold";
   white-space: nowrap;
 }
@@ -373,10 +373,22 @@ a {
   }
 }
 .portfolio-button-container {
-  display: flex;
-  flex-flow: row;
+  
   padding-top: 8px;
+  width: 85%;
+  display: flex;
 }
+.portfolio-button-l {
+  float: left;
+  margin: 0px;
+}
+  
+.portfolio-button-r {
+  float: right;
+  margin: 0px;
+}
+
+  
 .portfolio-button {
   background: rgba(0, 0, 0, 0.2);
     border: 0px; 
@@ -398,8 +410,9 @@ a {
     align-items: center;
 }
 
-.image-round-couners-14 {
+.image-portfolio {
   border-radius: 14px;
+  object-fit: cover;
 
 }
 .icon-naked {

@@ -36,16 +36,15 @@ function Portfolio() {
         <li key={index}>
                <h2>{portfolio[index].title}, {portfolio[index].category}</h2>
                <h4>Completion Date: {portfolio[index].completionDate} </h4>
-               <img src={portfolio[index].img} className="image-round-couners-14" width="386px" height="240px" ></img>
+               <img src={portfolio[index].img} className="image-portfolio" width="75%" height="420px" ></img>
                <div className="portfolio-button-container">
-                    <button>
-                      <img src={IconEmail} alt="" width='30px'/> Details
-                    </button>
-                    <button onClick={nextIndex}>
-                      <img src={IconEmail} alt="" width='30px'/> Next
-                    </button>
-             
-                </div>
+                  <button className="portfolio-button-l">
+                    <img src={IconEmail} alt="" width='30px'/> Details
+                  </button>
+                  <button onClick={nextIndex} className="portfolio-button-r">
+                    <img src={IconEmail} alt="" width='30px'/> Next
+                  </button>
+               </div>
             </li>
         {/* {
           portfolio.map ((portfolioItem) => (
