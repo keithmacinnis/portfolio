@@ -11,40 +11,48 @@ function MainContainer() {
   return (
     <div className='container-main-wrapper'>
       <Background isMobile={ isMobile }/>
-      <div className="container-socials">
-        <div />
-        <a href="http://github.com/keithmacinnis/" target="_blank"> <img src={IconGitHub}  alt="GitHub" width="30px" height="30px"/></a>
-        <a href="http://linkedin.com/in/keithmacinnis/"target="_blank"><img src={IconLinkedIn} alt="LinkedIn" width="30px" height="30px"/></a>
-        <a href="http://instagram.com/keithmacinnis/"target="_blank"><img src={IconInstagram} alt="Instagram" width="30px" height="30px"/></a>
-      </div>
       <div className='container-main'>
-        <ul className='container-menu-ul'>
-          <li>
-            <img src={Logo} alt="Logo that spins on hover" />
-          </li>
-          <li>
-            <NavLink to={`/`}>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={`/resume`}>
-              Resume
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={`/portfolio`}>
-              Portfolio
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={`/articles`}>
-              Articles
-            </NavLink>
-          </li>
-        </ul>
-        <Outlet/>
-      </div >
+
+        <div className='menu'>
+          <ul className='container-menu-ul'>
+            <li>
+              <img src={Logo} alt="Logo that spins on hover" />
+            </li>
+            <li>
+              <NavLink to={`/`}>
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={`/resume`}>
+                Resume
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={`/portfolio`}>
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={`/articles`}>
+                Articles
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+
+        <div className="socials">
+          <div />
+          <a href="http://github.com/keithmacinnis/" target="_blank"> <img src={IconGitHub}  alt="GitHub" width="30px" height="30px"/></a>
+          <a href="http://linkedin.com/in/keithmacinnis/"target="_blank"><img src={IconLinkedIn} alt="LinkedIn" width="30px" height="30px"/></a>
+          <a href="http://instagram.com/keithmacinnis/"target="_blank"><img src={IconInstagram} alt="Instagram" width="30px" height="30px"/></a>
+        </div>
+
+        <div className='outlet'>
+          <Outlet/>
+        </div>
+        
+      </div>
     </div>
 );
 }
