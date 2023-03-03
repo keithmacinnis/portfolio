@@ -25,6 +25,19 @@
   margin: 0 30px 0 100px;
 }
 
+
+.container-portfolio {
+  list-style: none;
+  padding-left: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  position: relative;
+
+}
+
+
 .container-menu-ul {
   display: flex;
   gap: 30px;
@@ -82,30 +95,27 @@
   translate: 4px 4px;
 }
 
-.container-portfolio {
-  list-style: none;
-  padding-left: 100px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
-  grid-gap: 20px;
-  position: relative;
-}
 .portfolio-grid-item-container {
   background-color: #61dafb20;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
- height: 250px;
-  grid-auto-columns: minmax(300px);
-  width: auto;
+  grid-template-rows: auto 1fr auto;
+  height: 250px;
+  width: 260px;
+  grid-template-areas:
+    "portfolio-grid-item-container-header-left portfolio-grid-item-container-header-right "
+    "portfolio-grid-item-container-body portfolio-grid-item-container-body"
+    "portfolio-grid-item-container-footer  portfolio-grid-item-container-footer ";
+  
 }
+
 .portfolio-grid-item-container-header-left {
   grid-row: 1;
   grid-column: 1;
   justify-self: start;
   padding-left: 10px;
   padding-top: 10px;
+  margin-bottom: 0px;
 }
 .portfolio-grid-item-container-header-right {
   grid-row: 1;
@@ -113,17 +123,24 @@
   justify-self: end;
   padding-right: 10px;
   padding-top: 10px;
+  margin-bottom: 0px;
 }
 .portfolio-grid-item-container-body {
-
+  grid-column: 1/-1;
   grid-row: 2;
   padding-left: 10px;
+  align-items: flex-start;
+  padding-top: 8px;
 }
-.portfolio-grid-item-container footer {
+.portfolio-grid-item-container-body h4 {
+  margin-top: 0px;
+}
+.portfolio-grid-item-container-footer {
   padding-left: 10px;
   font-size:x-small;
   grid-row: 3;
   grid-column: 1 / -1;
+  padding-bottom: 6px;
 }
 
 body {
@@ -134,7 +151,7 @@ body {
 h1, h2 , h4 {
   
   font-family: "NocturneBold";
-  white-space: nowrap;
+
   
 }
 h1 {
