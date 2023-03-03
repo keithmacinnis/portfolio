@@ -15,7 +15,7 @@ function PortfolioItem({data}) {
       </div>
       <div className="portfolio-grid-item-container-body">
         <h4>{title}</h4>
-        <img src={img} width='248px'></img>
+   
         <p>{description}</p>
       </div>
       <footer>
