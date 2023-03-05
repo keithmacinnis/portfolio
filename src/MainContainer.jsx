@@ -12,7 +12,7 @@ function MainContainer() {
     <div className='container-main-wrapper'>
       <Background isMobile={ isMobile }/>
       <div className='container-main'>
-
+        
         <div className='menu'>
           <ul className='container-menu-ul'>
             <li>
@@ -51,7 +51,7 @@ function MainContainer() {
         <div className='outlet'>
           <Outlet/>
         </div>
-        
+
       </div>
     </div>
 );
