@@ -444,6 +444,11 @@ button:hover {
       "footer";
   }
 }
+@media (max-width: 400px) {
+  .header-my-name {
+    white-space: break-spaces;
+  }
+}
 .resume-screenshot  {
   height: 240px;
   object-fit:cover;
