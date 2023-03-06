@@ -24,7 +24,7 @@ export default [
     completionDate:"March, 2022",
     img:ScreenShotOnrampAcademy, 
     description:"An educational/research platform for financial advisors to expand their crypto knowledge", 
-    longDescription:"We designed and built this educational/research platform internally over four months in vue3 & python with a graphQL CMS. Information was fetched from internal restful microservices and external third party APIs. There were tools that allowed backtesting of custom models, a content library that spanned over a hundred articles, and fact cards for the top thirty coins.",
+    longDescription:"We designed and built this educational/research platform internally over four months in vue3 & python with a graphQL CMS. Information was fetched from internal restful microservices and external third-party APIs. There were tools that allowed backtesting of custom models, a content library that spanned over a hundred articles, and fact cards for the top thirty coins.",
     skills:"js / vue3 / python / sql / kubenetes / graphQL"    
   },
   {
@@ -34,7 +34,7 @@ export default [
     completionDate:"May, 2020",
     img:ScreenShotNT, 
     description:"Created a modern client application for Northern Trust Bank", 
-    longDescription:"Among a distributed team of 500 IBM engineers, our team focued on Auth and Messenging. We integrated OnFido, an AI-powered authentication system and the authorization systems for the web, android, and iOS client applications. ",
+    longDescription:"Among a distributed team of 500 IBM engineers, our team focused on Auth and front-end clients. We integrated OnFido, an AI-powered authentication system, and other authentication systems into traditional banks like Barclays and modern services like Plaid.",
     skills:"js / react / java / iOS / microservices / kafka"    
   },
 
@@ -51,10 +51,10 @@ export default [
     id:"4",
     title:"Medical Mercy Canada",
     category:"Web Dev",
-    completionDate:"December, 2022",
+    completionDate:"Ongoing",
     img:ScreenShotMMC, 
-    description:"A chairty raising money for humantarian aid.", 
-    longDescription:"This is a volunteer role in which I maintan the server and domains. The site is updated by other memebers, and I do cleanups every few months.",
+    description:"A chairty raising funds for humantarian aid in Ukraine, India, Myanmar, and Thailand.", 
+    longDescription:"In this volunteer role I maintain the server, domains, and payment gateways. The site is updated by non-technical volunteers, with me doing cleanups every few months.",
     skills:"wp / hosting / tech support"  
   },
   {
@@ -63,11 +63,10 @@ export default [
     category:"iOS Swift",
     completionDate:"April, 2014",
     img:ScreenShotTFT, 
-    description:"A CBT tool used by counsoulrs, mainly in the States.", 
-    longDescription:"I Translated a practicians book into an iOS app. The app would guide a user through a practice that would relieve symptons with CBT/Eastern methods. ",
+    description:"A CBT tool used by counsellors, mainly in the States...", 
+    longDescription:"I translated a practicians book into an iOS app. The app would guide a user through a practice that would relieve symptoms by following the interactive onscreen guide. In tangent with this, a website providing certification and training in the school was offered. ",
     skills:"iOS / swift"  
-   },
-
+  },
   {
     id:"6",
     title:"For Play: The Neighbourhood Connector",
