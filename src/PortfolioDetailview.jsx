@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom"
 
 function PortfolioDetailview() {
   const location = useLocation()
-  const { id,title, description, skills,img } = location.state ;
+  const { title, description,extendedDescription, skills, img } = location.state ;
   return (    
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,6 +17,8 @@ function PortfolioDetailview() {
       <div className="container-portfolio">
         <img src={img} width="300px"></img>
         <p>{description}</p>
+        <p>{extendedDescription}</p>
+        <span>{skills}</span>
       </div>
       <NavLink to={`/portfolio`}>
           <button className="back-button">Back</button>
