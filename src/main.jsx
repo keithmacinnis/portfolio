@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="resume" element={<Resume/>}/>
           <Route path="portfolio" element={<Portfolio/>}/>
           <Route path="portfolio/:id" element={<PortfolioDetailView/>}/>
-          <Route path="articles" element={<h2>Articles went out of scope.</h2>}/>
+          {/* <Route path="articles" element={<h2>Articles went out of scope.</h2>}/> */}
         </Route>
       </Routes>
     </AnimatePresence>

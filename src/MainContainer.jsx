@@ -32,11 +32,11 @@ function MainContainer() {
                 Portfolio
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to={`/articles`}>
                 Articles
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="socials">
