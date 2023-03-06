@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
+import './styles.css'
 import PortfolioItem  from './PortfolioItem.jsx'
+import Portfolios from './PortfolioService';
 import { motion } from "framer-motion"
 
-
-import './styles.css'
-import Portfolios from './PortfolioService';
-
 function Portfolio() {
-
-  
   return (    
     <motion.div
       initial={{ opacity: 0 }}

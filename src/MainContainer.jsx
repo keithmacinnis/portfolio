@@ -12,7 +12,6 @@ function MainContainer() {
     <div className='container-main-wrapper'>
       <Background isMobile={ isMobile }/>
       <div className='container-main'>
-        
         <div className='menu'>
           <ul className='container-menu-ul'>
             <li>
@@ -40,18 +39,15 @@ function MainContainer() {
             </li>
           </ul>
         </div>
-
         <div className="socials">
           <div />
           <a href="http://github.com/keithmacinnis/" target="_blank"> <img src={IconGitHub}  alt="GitHub" width="30px" height="30px"/></a>
           <a href="http://linkedin.com/in/keithmacinnis/"target="_blank"><img src={IconLinkedIn} alt="LinkedIn" width="30px" height="30px"/></a>
           <a href="http://instagram.com/keithmacinnis/"target="_blank"><img src={IconInstagram} alt="Instagram" width="30px" height="30px"/></a>
         </div>
-
         <div className='outlet'>
           <Outlet/>
         </div>
-
       </div>
     </div>
 );

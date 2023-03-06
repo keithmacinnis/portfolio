@@ -4,6 +4,7 @@ import ScreenShotForPlay from "./assets/portfolio_forPlay.jpeg";
 import ScreenShotTFT from "./assets/portfolio_tft.jpeg";
 import ScreenShotMMC from "./assets/portfolio_mmc.jpeg";
 import ScreenShot1Day from "./assets/portfolio_1day.jpeg";
+import ScreenShotNT from "./assets/portfolio_nt.jpeg";
 
 export default [
  {
@@ -26,24 +27,16 @@ export default [
   },
   {
     id:"2",
-    title:"For Play: The Neighbourhood Connector",
-    category:"iOS Swift",
-    completionDate:"March, 2015",
-    img:ScreenShotForPlay, 
-    description:"A Platform as a service for Financial Advisors.", 
-    skills:"iOS / swift / firebase"    
+    title:"Northern Trust",
+    category:"Full-stack",
+    completionDate:"May, 2020",
+    img:ScreenShotNT, 
+    description:"Created a modern client application for Northern Trust Bank.", 
+    skills:"js / react / java / iOS / microservices / kafka"    
   },
-  { 
-    id:"3",
-    title:"TFT: CBT Therapy",
-    category:"iOS Swift",
-    completionDate:"April, 2014",
-    img:ScreenShotTFT, 
-    description:"A Platform as a service for Financial Advisors.", 
-    skills:"iOS / swift"  
-   },
+
    {
-    id:"4",
+    id:"3",
     title:"1 Day Bumper",
     category:"Web Dev",
     completionDate:"Jan, 2021",
@@ -52,12 +45,31 @@ export default [
     skills:"wp"  
   },
   {
-    id:"5",
+    id:"4",
     title:"Medical Mercy Canada",
     category:"Web Dev",
     completionDate:"December, 2022",
     img:ScreenShotMMC, 
     description:"A chairty raising money for humantarian aid.", 
     skills:"wp, hosting"  
-  }
+  },
+  {
+    id:"5",
+    title:"TFT: CBT Therapy",
+    category:"iOS Swift",
+    completionDate:"April, 2014",
+    img:ScreenShotTFT, 
+    description:"A Platform as a service for Financial Advisors.", 
+    skills:"iOS / swift"  
+   },
+
+  {
+    id:"6",
+    title:"For Play: The Neighbourhood Connector",
+    category:"iOS Swift",
+    completionDate:"March, 2015",
+    img:ScreenShotForPlay, 
+    description:"A Platform as a service for Financial Advisors.", 
+    skills:"iOS / swift / firebase"    
+  },
 ]

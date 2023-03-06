@@ -1,7 +1,7 @@
+import './styles.css'
 import ImageGithub2022 from "./assets/github.png";
 import IconLinkedIn from "./assets/icons8-linkedin.svg";
 import IconGitHub from "./assets/icons8-github (1).svg";
-import './styles.css'
 import { motion } from "framer-motion"
 
 function Resume() {

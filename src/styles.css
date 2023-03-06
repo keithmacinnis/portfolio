@@ -38,6 +38,9 @@
 
 }
 
+.container-menu-ul .active {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
 
 .container-menu-ul {
   display: flex;
@@ -95,6 +98,16 @@
   transition: 0.5s ease-in-out;
   translate: 4px 4px;
 }
+.portfolio-link:hover {
+  filter: drop-shadow(3px 3px 2px #efcd08aa);
+  transition: 0.2s ease-in-out;
+}
+.portfolio-link:active {
+  filter: drop-shadow(1px 1px 2px #646cffaa);
+  transition: 0.5s ease-in-out;
+  translate: 3px 3px;
+}
+
 
 .portfolio-grid-item-container {
   background-color: #61dafb20;
@@ -364,4 +377,21 @@ button:hover {
   .container-portfolio-detail {
     padding-left: 24px;
   }
+}
+
+.back-button {
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  width: fit-content;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: .5s;
+  margin-top: 18px;
+  font-style:oblique;
+  float: left;
+
+}
+.back-button a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
