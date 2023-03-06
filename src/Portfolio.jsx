@@ -1,7 +1,7 @@
 import './styles.css'
-import PortfolioItem  from './PortfolioItem.jsx'
+import PortfolioItem from './PortfolioItem.jsx';
 import Portfolios from './PortfolioService';
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 
 function Portfolio() {
   return (    
@@ -11,17 +11,17 @@ function Portfolio() {
       exit={{ opacity: 0 }}
       transition={{ duration: .4 }}
     >
-        <h2>Portfolio</h2>
-        <div className="container-portfolio">
-          {
-            Portfolios.map ((portfolioItem) => (
-              <li key={portfolioItem.id}>
-                <PortfolioItem data={portfolioItem} />
-              </li>
-            ))
-          }
-        </div>
-      </motion.div>
+      <h2>Portfolio</h2>
+      <div className="container-portfolio">
+        {
+          Portfolios.map ((portfolioItem) => (
+            <li key={portfolioItem.id}>
+              <PortfolioItem data={portfolioItem} />
+            </li>
+          ))
+        }
+      </div>
+    </motion.div>
   )
 }
 export default Portfolio

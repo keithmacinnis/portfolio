@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom"
 
 function PortfolioDetailview() {
   const location = useLocation()
-  const { title, description,extendedDescription, skills, img } = location.state ;
+  const { title, description,longDescription, skills, img } = location.state ;
   return (    
     <motion.div
       initial={{ opacity: 0 }}
@@ -13,16 +13,26 @@ function PortfolioDetailview() {
       exit={{ opacity: 0 }}
       transition={{ duration: .4 }}
     >
-      <h2>Portfolio: {title}</h2>
-      <div className="container-portfolio">
-        <img src={img} width="300px"></img>
-        <p>{description}</p>
-        <p>{extendedDescription}</p>
-        <span>{skills}</span>
+      <div className="container-portfolio-detail-view">
+        <div className="header">
+          <h2>Portfolio: {title}</h2>
+        </div>
+        <div className="feature-image">
+          <img src={img} width="100%"></img>
+        </div>
+        <div className="descriptions">
+          <p>{description}.</p>
+          <p>{longDescription}</p>
+        </div>
+        <div className="skills">
+          <span>{skills}</span>
+        </div>
+        <div className="footer">
+          <NavLink to={`/portfolio`}>
+            <button className="back-button">Back</button>
+          </NavLink>
+        </div>
       </div>
-      <NavLink to={`/portfolio`}>
-          <button className="back-button">Back</button>
-      </NavLink>
     </motion.div>
   )
 }

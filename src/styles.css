@@ -35,7 +35,7 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
   position: relative;
-
+  max-width: 1132px;
 }
 
 .container-menu-ul .active {
@@ -327,6 +327,59 @@ button:hover {
     animation: logo-spin infinite 20s linear;
   }
 }
+
+
+.back-button {
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  width: fit-content;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: .5s;
+  margin-top: 18px;
+  font-style:oblique;
+  float: left;
+
+}
+.back-button a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+.container-portfolio-details {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap
+}
+.container-portfolio-detail-view {  
+  display: grid;
+  max-width: 1132px;
+  grid-template-columns: .6fr .4fr;
+  grid-template-rows: .5fr 2fr 0.2fr 0.2fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "feature-image descriptions"
+    "skills skills"
+    "footer footer";
+}
+.container-portfolio-detail-view .header { 
+  grid-area: header; 
+}
+.container-portfolio-detail-view .feature-image { 
+  grid-area: feature-image; 
+}
+.container-portfolio-detail-view .descriptions { 
+  grid-area: descriptions; 
+}
+.container-portfolio-detail-view .skills { 
+  grid-area: skills; 
+  font-size: x-small;
+}
+.container-portfolio-detail-view .footer { 
+  grid-area: footer; 
+}
+
 @media (max-width: 1024px) {
   .container-menu-ul{ 
     margin: 0 30px;
@@ -377,21 +430,23 @@ button:hover {
   .container-portfolio-detail {
     padding-left: 24px;
   }
+  .container-portfolio-detail-view {  
+    display: grid;
+    grid-template-columns: .8fr;
+    grid-template-rows: .2fr .5fr .5fr 0.1fr 0.1fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "feature-image"
+      "descriptions"
+      "skills"
+      "footer";
+  }
 }
-
-.back-button {
-  text-decoration: none;
-  color: white;
-  padding: 5px 20px;
-  width: fit-content;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: .5s;
-  margin-top: 18px;
-  font-style:oblique;
-  float: left;
-
-}
-.back-button a:hover {
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+.resume-screenshot  {
+  height: 242px;
+  object-fit:cover;
+  border-radius: 8px;
+  padding-top: 8px;
 }
