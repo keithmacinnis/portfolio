@@ -1,4 +1,4 @@
-import './styles.css'
+import './styles.css';
 import IconGitHub from "./assets/icons8-github (1).svg";
 import IconInstagram from "./assets/icons8-instagram.svg";
 import IconLinkedIn from "./assets/icons8-linkedin.svg";
@@ -6,11 +6,13 @@ import Logo from "./assets/logo.svg";
 import Spline from '@splinetool/react-spline';
 import { isMobile } from 'react-device-detect';
 import { Outlet, NavLink } from "react-router-dom";
-import { Triangle } from "react-loader-spinner"
-import  { useState } from "react";
+import { Triangle } from "react-loader-spinner";
+import { useState } from "react";
+
 function MainContainer() {
   const [loading, setLoading] = useState(true)
-  if (loading) {return (
+  if (loading) {
+    return (
       <div>
         <Triangle
           height="80"
@@ -50,11 +52,6 @@ function MainContainer() {
                 Portfolio
               </NavLink>
             </li>
-            {/* <li>
-              <NavLink to={`/articles`}>
-                Articles
-              </NavLink>
-            </li> */}
           </ul>
         </div>
         <div className="socials">

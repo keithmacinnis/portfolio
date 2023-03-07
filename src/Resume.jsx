@@ -1,11 +1,10 @@
 import './styles.css'
-
-import IconLinkedIn from "./assets/icons8-linkedin.svg";
-import IconGitHub from "./assets/icons8-github (1).svg";
+import IconLinkedIn from "./assets/icons8-linkedin.svg"
+import IconGitHub from "./assets/icons8-github (1).svg"
 import IconDalhousie from "./assets/dal-icon-70x70.png"
 import IconSMU from "./assets/smu-favicon-trans.png"
 import ImageLinkedin from "./assets/linkedin-large.jpeg"
-import ImageGithub from "./assets/github-large.jpeg";
+import ImageGithub from "./assets/github-large.jpeg"
 import { motion } from "framer-motion"
 
 function Resume() {
@@ -45,7 +44,6 @@ function Resume() {
             <img className="resume-screenshot" src={ImageGithub} alt="personal github summary of 2022" /> 
           </a>
         </div>
-
         <h2>Keywords</h2>
         <p>JS, Python, Java, vue2, vue3, react, vueJS, reactJS, Swift, SQL, git, docker, kubernetes, helmcharts, microservices, cloud, aws, ci/cd, agile, full stack, back end, front end, linux, mac, shell, bash, api, restful, graphql, oauth, okta, jira</p>
       </div>

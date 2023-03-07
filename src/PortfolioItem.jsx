@@ -1,7 +1,7 @@
 import './styles.css'
-import IconPortfolio from "./assets/icons8-folder-32-alt.svg";
-import React from 'react';
-import { Link } from "react-router-dom";
+import IconPortfolio from "./assets/icons8-folder-32-alt.svg"
+import React from 'react'
+import { Link } from "react-router-dom"
 
 function PortfolioItem({data}) {
   const { id,title, description, skills } = data ;

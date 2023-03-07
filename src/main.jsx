@@ -1,20 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import MainContainer from './MainContainer'
-import About from './About'
-import Resume from './Resume'
-import Portfolio from './Portfolio'
-import PortfolioDetailView from './PortfolioDetailView'
-
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
-
 import './assets/nocturne-serif-bold.otf'
 import './assets/nocturne-serif-regular.otf'
 import './styles.css'
+import About from './About'
+import MainContainer from './MainContainer'
+import Portfolio from './Portfolio'
+import PortfolioDetailView from './PortfolioDetailView'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Resume from './Resume'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -26,7 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="resume" element={<Resume/>}/>
           <Route path="portfolio" element={<Portfolio/>}/>
           <Route path="portfolio/:id" element={<PortfolioDetailView/>}/>
-          {/* <Route path="articles" element={<h2>Articles went out of scope.</h2>}/> */}
         </Route>
       </Routes>
     </AnimatePresence>

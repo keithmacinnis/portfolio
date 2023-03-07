@@ -1,6 +1,7 @@
-import IconEmail from "./assets/icons8-mail.svg";
-import './styles.css'
+import "./styles.css"
+import IconEmail from "./assets/icons8-mail.svg"
 import { motion } from "framer-motion"
+
 function About() {
   return (    
     <motion.div
