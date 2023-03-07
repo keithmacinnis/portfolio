@@ -6,8 +6,26 @@ import Logo from "./assets/logo.svg";
 import Spline from '@splinetool/react-spline';
 import { isMobile } from 'react-device-detect';
 import { Outlet, NavLink } from "react-router-dom";
-
+import { Triangle } from "react-loader-spinner"
+import  { useState } from "react";
 function MainContainer() {
+  const [loading, setLoading] = useState(true)
+  if (loading) {return (
+      <div>
+        <Triangle
+          height="80"
+          width="80"
+          color="#4fa94d"
+          ariaLabel="triangle-loading"
+          wrapperStyle={ { position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}
+          wrapperClassName=""
+          visible={true}
+        />
+         <DesktopBackground />
+      </div>
+    )
+  }
+  
   return (
     <div className='container-main-wrapper'>
       <Background isMobile={ isMobile }/>
@@ -50,31 +68,30 @@ function MainContainer() {
         </div>
       </div>
     </div>
-);
-}
+  );
 
-function MobileBackground(props) {
-  return (
-    <Spline
-      className="spline"
-      scene="https://draft.spline.design/KpaRDeXT6Qur4zaS/scene.splinecode"
-    />)
-}
-
-function DesktopBackground(props) {
-  return (
-    <Spline
-      className="spline"
-      scene="https://draft.spline.design/KpaRDeXT6Qur4zaS/scene.splinecode"
-    />)
-} 
-
-function Background(props) {
-  const isMobile = props.isMobile;
-  if (isMobile) {
-    return <MobileBackground />;
+  function MobileBackground(props) {
+    return (
+      <Spline
+        onLoad={()=>setLoading(false)} 
+        className="spline"
+        scene="https://draft.spline.design/KpaRDeXT6Qur4zaS/scene.splinecode"
+      />)
   }
-  return <DesktopBackground />;
+  function DesktopBackground(props) {
+    return (
+      <Spline
+        onLoad={()=>setLoading(false)} 
+        className="spline"
+        scene="https://draft.spline.design/KpaRDeXT6Qur4zaS/scene.splinecode"
+      />)
+  } 
+  function Background(props) {
+    const isMobile = props.isMobile;
+    if (isMobile) {
+      return <MobileBackground />;
+    }
+    return <DesktopBackground />;
+  }
 }
-
 export default MainContainer
