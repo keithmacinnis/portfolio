@@ -45,8 +45,6 @@ function Resume() {
             </button>
             <img className="resume-screenshot" src={ImageGithub} alt="personal github summary of 2022" /> 
           </a>
-
-
           </div>
           <h2>Portfolio</h2>
           <div className="resume-top-button-container">
@@ -56,7 +54,6 @@ function Resume() {
             </button>
           </NavLink>
           </div>
-    
       </div>
     </motion.div>
   )
