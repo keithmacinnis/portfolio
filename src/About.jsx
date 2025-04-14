@@ -16,7 +16,7 @@ function About() {
           Software engineering professional with a Bachelor of Computer Science from Dalhousie University, a Bachelor of Commerce from The Sobey School of Business, and a history of working in startups, FinTech, and agile teams big and small.
         </p>
         <p>
-          PS, this background you see is interactive 3D art created with Spline. To interact with it, just click and drag.
+          Fun feature: This background you see is interactive 3D art created with Spline. To interact, you can click and drag.
         </p>
         <a href="mailto:keithmacinnis@gmail.com">
           <button>
