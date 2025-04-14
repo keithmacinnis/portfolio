@@ -5,7 +5,7 @@ import IconLinkedIn from "./assets/icons8-linkedin.svg";
 import Logo from "./assets/logo.svg";
 import Spline from '@splinetool/react-spline';
 import { isMobile } from 'react-device-detect';
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import { Triangle } from "react-loader-spinner";
 import { useState } from "react";
 
@@ -51,6 +51,16 @@ function MainContainer() {
               <NavLink to={`/portfolio`}>
                 Portfolio
               </NavLink>
+            </li>
+            <li>
+              <Link to={`https://maisie-schedules.whistlerbusinesssolutions.com/`}>
+                Maise Schedules
+              </Link>
+            </li>
+            <li>
+              <Link to={`https://www.whistlerbusinesssolutions.com/`}>
+                Whistler Business Solutions
+              </Link>
             </li>
           </ul>
         </div>
