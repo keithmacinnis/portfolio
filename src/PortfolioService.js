@@ -5,15 +5,26 @@ import ScreenShotTFT from "./assets/portfolio_tft.jpeg";
 import ScreenShotMMC from "./assets/portfolio_mmc.jpeg";
 import ScreenShot1Day from "./assets/portfolio_1day.jpeg";
 import ScreenShotNT from "./assets/portfolio_nt.jpeg";
+import ScreenShotMaisie from "./assets/portfolio_maisie-schedule.jpeg";
 
 export default [
+  {
+    id:"-1",
+    title:"Maisie Schedules",
+    category:"Shopify Apps",
+    completionDate:"April, 2025",
+    img:ScreenShotMaisie, 
+    description:"A Shopify app to turn your products into bookable events or services with Easy Time Slots.", 
+    longDescription:"A booking tool built with Remix, React, Node.js, and JavaScript, currently in testing to enable merchants to offer bookable events and services.",
+    skills:"js / node / react / sql / cloud / shopify"  
+  },
  {
     id:"0",
     title:"Onramp Advisor",
     category:"Full-stack",
     completionDate:"December, 2022",
     img:ScreenShotOnrampAdvisor, 
-    description:"A platform for financial advisors to seamlessly trade and allocate crypto on behalf of their clients                 ", 
+    description:"A platform for financial advisors to seamlessly trade and allocate crypto on behalf of their clients", 
     longDescription:"Most of the development focused on 3rd party API's from banks & crypto exchanges. One of the premium features developed was the ability to create self-balancing models, much like traditional indexes. The UI came designed in figma and was coded in Vue2. The Backend was spread across python microservices and connected to external APIs from banks and crypto exchanges. The team was agile and used CickUp for tickets.",
     skills:"js / vue2 / python / sql / kubenetes / restful"  
   },

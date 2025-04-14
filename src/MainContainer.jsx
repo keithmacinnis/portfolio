@@ -53,11 +53,6 @@ function MainContainer() {
               </NavLink>
             </li>
             <li>
-              <Link to={`https://maisie-schedules.whistlerbusinesssolutions.com/`}>
-                Maise Schedules
-              </Link>
-            </li>
-            <li>
               <Link to={`https://www.whistlerbusinesssolutions.com/`}>
                 Whistler Business Solutions
               </Link>
