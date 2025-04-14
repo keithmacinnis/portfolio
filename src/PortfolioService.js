@@ -5,7 +5,7 @@ import ScreenShotTFT from "./assets/portfolio_tft.jpeg";
 import ScreenShotMMC from "./assets/portfolio_mmc.jpeg";
 import ScreenShot1Day from "./assets/portfolio_1day.jpeg";
 import ScreenShotNT from "./assets/portfolio_nt.jpeg";
-import ScreenShotMaisie from "./assets/portfolio_maisie-schedule.jpeg";
+import ScreenShotMaisie from "./assets/portfolio_maisie-schedules.jpeg";
 
 export default [
   {
