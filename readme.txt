@@ -3,3 +3,5 @@ https://comforting-centaur-66fd65.netlify.app/
 
 Site:
 https://keithmacinnis.com/
+
+*Push to Main to deploy via netlify*
